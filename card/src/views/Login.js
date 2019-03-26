@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import "../css/login.css"
 import axios from "axios"
-
-class login extends Component {
+import {HashRouter , Route , Link, Switch,Redirect} from 'react-router-dom'
+class login extends React.Component {
   constructor(props){
     super(props)
     this.state= {
       mobile:"",
       verificationCode:""
     }
+    this.goLogin = this.goLogin.bind(this);
   }
   
   render() {
@@ -22,7 +23,7 @@ class login extends Component {
                 <input type="number" maxLength="6" placeholder="请输入验证码" name="verificationCode"  onChange={this.handelChange.bind(this)}/>
                 <div className="getvercode" onClick={this.getVercode.bind(this)} >获取验证码</div>
             </div>
-            <div className="goLogin" onClick={this.goLogin.bind(this)}>登录</div>
+            <div className="goLogin" onClick={this.goLogin}>登录</div>
         </div>
       </div>
     );
@@ -47,14 +48,20 @@ class login extends Component {
 
   }
   goLogin(){
-    console.log(this.state.verificationCode)
+    var that =this
+    console.log(that.state.verificationCode)
     axios.post('/api/account/login', {
-      mobile: this.state.mobile,
-      verificationCode:this.state.verificationCode,
+      mobile: that.state.mobile,
+      verificationCode:that.state.verificationCode,
       type:1
     })
-    .then(function (response) {
-      console.log(response);
+    .then(function (res) {
+      console.log(res);
+      if(res.data.code==0){
+        console.log("跳转")
+       console.log(that)
+       that.props.history.push("/")
+      }
     })
     .catch(function (error) {
       console.log(error);

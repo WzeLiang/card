@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Tarbar from './components/Tarbar'
+
 import './App.css';
 import Home from "./views/Home"
 import Login from "./views/Login"
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
        <HashRouter>
-                 <Link to="/login">登录</Link>
+                 {/* <Link to="/login">登录</Link> */}
                 
                     <Switch>
                         <Route exact={true} path="/" component={Home}></Route>
@@ -23,7 +23,7 @@ class App extends Component {
                     </Switch>
               
             </HashRouter>
-        <Tarbar></Tarbar>
+        
       </div>
     );
   }

@@ -15,7 +15,8 @@ const Tabbox = {
   alignItems:"center",
   height:"1rem",
   fontSize:".24rem",
-  boxShadow:"rgba(0, 0, 0, 0.2) 0px 0px 20px"
+  boxShadow:"rgba(0, 0, 0, 0.2) 0px 0px 20px",
+  background:"#ffffff"
 }
 const Tabitem={
   width:"100%",
@@ -44,8 +45,8 @@ class Tarbar extends Component {
         {
             this.state.list.map((item,index)=>{
               return(
-                <HashRouter>
-                  <Link  to={item.path}  style={Tabitem} key={index}>
+                <HashRouter key={index}>
+                  <Link  to={item.path}  style={Tabitem} >
                   <img src={item.img} alt="" style={{width:".56rem"}}/>
                   <div>{item.name}</div>
                 </Link>

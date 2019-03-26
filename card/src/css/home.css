@@ -1,0 +1,66 @@
+.Home {
+  padding-bottom: 1rem;
+}
+.Home .GoodsBox {
+  margin-top: .2rem;
+  font-size: .36rem;
+}
+.Home .GoodsBox .box-header {
+  padding: .35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .24rem;
+  color: #999999;
+}
+.Home .GoodsBox .box-header .header-left {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333333;
+  font-size: .36rem;
+  justify-content: center;
+}
+.Home .GoodsBox .box-header .header-left img {
+  margin-right: .1rem;
+}
+.Home .GoodsBox .box-header .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Home .GoodsBox .box-header .header-right img {
+  margin-left: 0.1rem;
+}
+.Home .GoodsBox .box-goodslist {
+  overflow: scroll;
+  width: 100%;
+  white-space: nowrap;
+  height: 3.5rem;
+}
+.Home .GoodsBox .GoodsItem {
+  width: 1.9rem;
+  height: 3.2rem;
+  margin-right: .2rem;
+  font-size: .24rem;
+  display: inline-block;
+}
+.Home .GoodsBox .GoodsItem:nth-child(1) {
+  margin-left: .35rem;
+}
+.Home .GoodsBox .GoodsItem img {
+  width: 100%;
+}
+.Home .GoodsBox .GoodsItem .item-info {
+  margin-top: .2rem;
+}
+.Home .GoodsBox .GoodsItem .item-info .info-price {
+  font-weight: bold;
+  margin-top: .2rem;
+}
+.Home .GoodsBox .GoodsItem .item-info .info-name {
+  height: .7rem;
+  line-height: .34rem;
+  width: 100%;
+  white-space: normal;
+}

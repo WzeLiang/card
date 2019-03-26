@@ -1,0 +1,272 @@
+.My{
+    font-size: .24rem;
+    background: #ffffff;
+    padding-bottom: 1rem;
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .5rem;
+        height: 1.1rem;
+        padding: 0 .35rem;
+        font-weight: bold;
+        margin-bottom: .2rem;
+    }
+    .card{
+        // padding: 0 .35rem;
+        margin: 0 auto;
+        width: 6.7rem;
+        height: 2rem;
+        background: url("../images/card-back.png");
+        color: #AAAAAA;
+        .card-msg{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: .3rem;
+        }
+    }
+    .balance{
+        padding: 0 .35rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 1.5rem;
+        margin: .3rem 0;
+        .left{
+            display: flex;
+            align-items: center;
+            font-size: .3rem;
+            font-weight: bold;
+            margin-bottom: .2rem;
+            flex-direction: column;
+            .left-top{
+                margin-bottom: .2rem;
+            }
+            .left-number{
+                span{
+                    font-size: .5rem;
+                }
+            }
+        }
+        .right{
+            font-size:.28rem;
+            color:#d9a663;
+            width:2.07rem;
+            height:.7rem;
+            border:2px solid #d9a663;
+            border-radius:.35rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+        }
+    }
+    .catch-box{
+        width:6.7rem;
+        height:1.1rem;
+        margin:0 auto;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        position:relative;
+        font-size:.28rem;
+        border-radius:.1rem;
+        box-shadow:rgba(0, 0, 0, 0.2) 0px 0px .2rem;
+        .box-border{
+            position:absolute;
+            top:.36rem;
+            left:50%;
+            width:2px;
+            height:.34rem;
+            background:#eeeeee;
+        }
+        .catch-item{
+            height:100%;
+            width:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            img{
+                margin-right: .15rem;
+            }
+
+        }
+    }
+
+    .subcard{
+       width: 100%;
+       padding: .2rem 0 0;
+       .subcard-list{
+            overflow:hidden;
+            width:100%;
+            white-space:nowrap;
+            .subcard-item {
+                display:inline-block;
+                width:2.48rem;
+                height:1.43rem;
+                position:relative;
+                margin-right:.22rem;
+                background: url("../images/member-subcardback.jpg");
+                    &:first-child{
+                        margin-left: .35rem;
+                    }
+                    .item-info{
+                        display:flex;
+                        justify-content:space-between;
+                        flex-direction:column;
+                        padding:.28rem .2rem;
+                        color:#ffffff;
+                        font-size:.24rem;
+                        height:100%;
+                           
+                    }
+                }
+                
+       }
+    }
+    .buyback{
+        display:flex;
+        height:.95rem;
+        align-items:center;
+        justify-content:space-between;
+        font-size:.24rem;
+        color:#999999;
+        
+        padding: 0 .35rem;
+        .right{
+            width:1.3rem;
+            height:.5rem;
+            color:#d9a663;
+            border:1px solid #d9a663;
+            border-radius:.25rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+        }
+    }
+    .moneypanel{
+        padding: .3rem .35rem;
+
+        .moneypanel-msg{
+            display:flex;
+            align-items:center;
+            height:1rem;
+            margin-bottom:.3rem;
+            font-size:.22rem;
+            color:#999999;
+            .numb{
+                font-size:.36rem;
+                font-weight:bold;
+                color:#333333;
+            }
+            .msg-money{
+                width:2.8rem;
+                height:100%;
+                display:flex;
+                flex-direction:column;
+                align-items:flex-start;
+                justify-content:flex-start;
+                .numb{
+                    font-size:.48rem;
+                    color:#d9a663;                    
+                }
+                
+            }
+            .msg-year{
+                width:1.9rem;
+                height:100%;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+            }
+            .msg-day{
+                width:2rem;
+                height:100%;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                  
+            }
+
+        }
+        .moneypanel-tips{
+            height:.8rem;
+            width:100%;
+            padding:.2rem;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            font-size:.22rem;
+            color:#999999;
+            box-shadow:rgba(0, 0, 0, 0.2) 0px 0px .2rem;
+            position:relative;
+            .tips-left{
+                font-size:.28rem;
+                color:#333333;
+                font-weight:bold;
+
+            }
+            .tips-right {
+                span{
+                    font-size:.36rem;
+                    color:#d9a663;
+                    font-weight:bold;
+                    margin:0 .1rem;
+                }
+            }
+                
+            .lefthorn {
+                position:absolute;
+                top:0;
+                left:0;
+                width:.2rem;
+                height:.2rem;
+                
+                }
+            .righthorn {
+                position:absolute;
+                bottom:0;
+                right:0;
+                width:.2rem;
+                height:.2rem;
+                
+                }
+                         
+        }
+        .moneypanel-bottom{
+            display:flex;
+            height:.95rem;
+            align-items:center;
+            justify-content:space-between;
+            font-size:.24rem;
+            color:#999999;
+            .bottom-btn {
+                width:1.3rem;
+                height:.5rem;
+                color:#d9a663;
+                border:1px solid #d9a663;
+                border-radius:.25rem;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                
+                }
+                
+        }
+    }
+    
+}
+
+
+.gary-back{
+    width:100%;
+    height:.2rem;
+    background:#f7f7f7;
+    
+}

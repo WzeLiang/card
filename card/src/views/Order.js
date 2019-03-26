@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import Tarbar from '../components/Tarbar'
 class Order extends Component {
   render() {
     return (
       <div className="Order">
-            This is Order
-      
+           
+            <Tarbar></Tarbar>
       </div>
     );
   }
