@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "../css/login.css"
 import axios from "axios"
 import {HashRouter , Route , Link, Switch,Redirect} from 'react-router-dom'
+import { Button } from "antd-mobile"
+import 'antd-mobile/dist/antd-mobile.css';
 class login extends React.Component {
   constructor(props){
     super(props)
@@ -24,6 +26,7 @@ class login extends React.Component {
                 <div className="getvercode" onClick={this.getVercode.bind(this)} >获取验证码</div>
             </div>
             <div className="goLogin" onClick={this.goLogin}>登录</div>
+            <Button>aaaaa </Button>
         </div>
       </div>
     );
