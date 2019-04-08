@@ -4,6 +4,8 @@ import GoodsBox from "../components/GoodsBox"
 import "../css/home.css"
 import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.min.css'
+import axios from "../request/request"
+
 class Home extends Component {
   constructor(props){
     super(props)
@@ -35,6 +37,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home" style={{background:"#ffffff"}}>
+            <div onClick={this.getBanner.bind(this)} style={{fontSize:"30px"}}> 测试</div>
              <div className="swiper-container" style={{paddingTop:".5rem"}}>
                 <div className="swiper-wrapper">
                 {
@@ -58,6 +61,13 @@ class Home extends Component {
             <Tarbar></Tarbar>
       </div>
     );
+  }
+  getBanner(){
+    console.log( axios)
+    axios.post("/api/index/getBanner",{})
+    .then((res)=>{
+      console.log(res);
+    })
   }
 }
 

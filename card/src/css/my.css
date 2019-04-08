@@ -2,6 +2,7 @@
   font-size: .24rem;
   background: #ffffff;
   padding-bottom: 1rem;
+  width: 100%;
 }
 .My .user {
   display: flex;
@@ -14,10 +15,10 @@
   margin-bottom: .2rem;
 }
 .My .card {
-  margin: 0 auto;
-  width: 6.7rem;
+  margin: 0 .35rem;
   height: 2rem;
-  background: url("../images/card-back.png");
+  background: url("../images/card-back.png") no-repeat;
+  background-size: 100% 100%;
   color: #AAAAAA;
 }
 .My .card .card-msg {
@@ -62,9 +63,8 @@
   justify-content: center;
 }
 .My .catch-box {
-  width: 6.7rem;
   height: 1.1rem;
-  margin: 0 auto;
+  margin: 0 .35rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
