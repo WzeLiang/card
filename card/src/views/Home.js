@@ -64,7 +64,12 @@ class Home extends Component {
   }
   getBanner(){
     console.log( axios)
-    axios.post("/api/index/getBanner",{})
+    let params ={
+      "mobile":"14791286530",
+      "type":"1"
+    }
+    console.log(params)
+    axios.post("/api/public/getCheckCode",params)
     .then((res)=>{
       console.log(res);
     })
